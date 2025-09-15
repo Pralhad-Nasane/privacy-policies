@@ -4,104 +4,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy for PassMancer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="description"
+        content="Privacy Policy for PassMancer - A secure, offline password generator app that prioritizes your privacy and security.">
+    <meta name="keywords" content="privacy policy, password generator, security, PassMancer, offline app">
+    <meta name="author" content="PassMancer Team">
+    <title>Privacy Policy - PassMancer | Secure Password Generator</title>
+
+    <!-- Clean fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        /* Add custom CSS styles here if needed */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            padding: 4px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
         }
 
         .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        h1, h2 {
-            color: #333;
+        /* Header */
+        .header {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
         }
 
-        em {
-            font-style: italic;
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 16px;
         }
 
-        p {
+        .header p {
+            font-size: 1.1rem;
+            color: #6c757d;
             margin-bottom: 20px;
         }
 
-        /* Customize other styles as needed */
+        .last-updated {
+            font-size: 0.9rem;
+            color: #868e96;
+            background-color: #e9ecef;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+        }
 
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight p {
+            margin: 0;
+            font-weight: 500;
+            color: #1976d2;
+        }
+
+        /* App Store Section */
+        .app-store-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+            margin: 60px 0;
+            border-radius: 10px;
+        }
+
+        .app-store-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 16px;
+        }
+
+        .app-store-section p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .app-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .app-button:hover {
+            background-color: #34495e;
+            color: white;
+        }
+
+        .rating-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .rating-section h3 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #0077b5;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .contact-link:hover {
+            background-color: #005885;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #bdc3c7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header {
+                padding: 40px 0;
+            }
+
+            .main-content {
+                padding: 40px 0;
+            }
+
+            .app-store-section {
+                margin: 40px 0;
+                padding: 30px 0;
+            }
+
+            .app-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Privacy Policy for PassMancer</h1>
-        <p class="text-center"><em>Last Updated: 7 September 2023</em></p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>PassMancer - Secure Password Generator</p>
+            <div class="last-updated">Last updated: September 15, 2025</div>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Introduction -->
+            <section class="section">
+                <h2>Introduction</h2>
+                <p>Welcome to PassMancer, a proudly Indian-developed password generator app. We prioritize your privacy
+                    and security above all else. This Privacy Policy outlines how we handle your data and underscores
+                    our unwavering commitment to safeguarding your privacy.</p>
+                <div class="highlight">
+                    <p>🇮🇳 Proudly Made in India with privacy-first principles</p>
+                </div>
+            </section>
 
-        <h2>Introduction</h2>
-        <p>Welcome to PassMancer, a proudly Indian-developed password generator app. We prioritize your privacy and
-            security above all else. This Privacy Policy outlines how we handle your data and underscores our unwavering
-            commitment to safeguarding your privacy.</p>
+            <!-- Data Collection -->
+            <section class="section">
+                <h2>Data Collection and Usage</h2>
+                <div class="highlight">
+                    <p>Zero Data Collection Policy</p>
+                </div>
+                <p>PassMancer does not, under any circumstances, collect personal information, user data, or browsing
+                    history. We do not engage in user tracking or data retention, ensuring your complete privacy.</p>
+                <p><strong>What we don't collect:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Personal information</li>
+                    <li>Usage analytics or tracking data</li>
+                    <li>Generated passwords</li>
+                    <li>Device information</li>
+                    <li>Location data</li>
+                </ul>
+            </section>
 
-        <h2>Data Collection and Usage</h2>
-        <p>No Data Collection: PassMancer does not, under any circumstances, collect personal information, user data, or
-            browsing history. We do not engage in user tracking or data retention, ensuring your complete privacy.</p>
+            <!-- Offline Functionality -->
+            <section class="section">
+                <h2>Offline Functionality</h2>
+                <div class="highlight">
+                    <p>100% Offline Operation</p>
+                </div>
+                <p>PassMancer operates entirely offline. All password generation and cryptographic operations happen
+                    locally on your device. No internet connection is required or used during operation, further
+                    reinforcing your privacy.</p>
+            </section>
 
-        <h2>Offline Functionality</h2>
-        <p>100% Offline: PassMancer operates solely in offline mode. Your generated passwords and app usage are entirely
-            self-contained, independent of an internet connection, further reinforcing your privacy.</p>
+            <!-- Security Measures -->
+            <section class="section">
+                <h2>Security Measures</h2>
+                <p>While PassMancer does not collect data, we maintain robust security measures to safeguard the app's
+                    functionality and your generated passwords from potential threats, adhering to industry-standard
+                    practices.</p>
+                <p><strong>Security features:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Industry-standard cryptographic algorithms</li>
+                    <li>Secure random number generation</li>
+                    <li>No password storage or logging</li>
+                    <li>Regular security audits</li>
+                </ul>
+            </section>
 
-        <h2>Location Information</h2>
-        <p>Location Data: PassMancer neither accesses nor utilizes your device's location data. We have no knowledge of
-            your physical whereabouts while using our app.</p>
+            <!-- Policy Updates -->
+            <section class="section">
+                <h2>Changes to this Privacy Policy</h2>
+                <p>We may periodically update this Privacy Policy to reflect changes in the app or legal requirements.
+                    We are committed to notifying users of significant updates through the app or our official website.
+                    By continuing to use PassMancer, you acknowledge and agree to any revisions made to this Privacy
+                    Policy.</p>
+            </section>
 
-        <h2>User Accounts and Credentials</h2>
-        <p>No User Accounts: PassMancer does not require user accounts, login information, or personal identifiers. Your
-            interaction with the app remains entirely anonymous.</p>
+            <!-- Contact -->
+            <section class="section">
+                <h2>Contact Us</h2>
+                <p>If you have inquiries or concerns regarding this Privacy Policy or the usage of PassMancer, please
+                    feel free to reach out to us. We are committed to addressing your questions promptly and
+                    professionally.</p>
+                <p style="margin-top: 20px;">
+                    <a href="https://in.linkedin.com/in/pralhadnasane" class="contact-link" target="_blank"
+                        rel="noopener noreferrer">
+                        Connect on LinkedIn
+                    </a>
+                </p>
+            </section>
+        </div>
+    </main>
 
-        <h2>Third-Party Services</h2>
-        <p>No Third-Party Services: PassMancer does not integrate with or share data with any third-party services,
-            platforms, or social media networks. Your information is kept solely within the confines of the app.</p>
+    <!-- App Store Section -->
+    <section class="app-store-section">
+        <div class="container">
+            <h2>Download PassMancer</h2>
+            <p>Experience secure password generation with complete privacy protection</p>
 
-        <h2>Security Measures</h2>
-        <p>Data Security: While PassMancer does not collect data, we maintain robust security measures to safeguard the
-            app's functionality and your generated passwords from potential threats, adhering to industry-standard
-            practices.</p>
+            <div class="app-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.passmancer.android&pcampaignid=web_share"
+                    class="app-button" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                    </svg>
+                    Download on Google Play
+                </a>
+            </div>
 
-        <h2>Changes to this Privacy Policy</h2>
-        <p>Policy Updates: We may periodically update this Privacy Policy to reflect changes in the app or legal
-            requirements. We are committed to notifying users of significant updates through the app or our official
-            website. By continuing to use PassMancer, you acknowledge and agree to any revisions made to this Privacy
-            Policy. We encourage you to review this policy periodically for the most up-to-date information regarding
-            your privacy.</p>
+            <div class="rating-section">
+                <h3>Love PassMancer? Rate us!</h3>
+                <div class="stars">★★★★★</div>
+                <p>Your feedback helps us improve and reach more users who value privacy. Please take a moment to rate
+                    PassMancer on Google Play.</p>
+                <p style="margin-top: 15px;">
+                    <a href="https://play.google.com/store/apps/details?id=com.passmancer.android&pcampaignid=web_share"
+                        class="app-button" style="background-color: #4CAF50;" target="_blank" rel="noopener noreferrer">
+                        ⭐ Rate on Google Play
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <h2>Contact Us</h2>
-        <p>Questions: If you have inquiries or concerns regarding this Privacy Policy or the usage of PassMancer, please
-            feel free to reach out to us at <a href="https://in.linkedin.com/in/pralhadnasane">Linkedin</a>. We are committed to addressing your questions
-            promptly and professionally.</p>
-
-        <h2>Applicability</h2>
-        <p>Terms and Conditions: This Privacy Policy is a vital component of our comprehensive Terms and Conditions. By
-            utilizing PassMancer, you explicitly consent to the terms outlined within this Privacy Policy.</p>
-
-        <h2>Conclusion</h2>
-        <p>We deeply respect your privacy and are fully dedicated to providing a safe and secure experience with
-            PassMancer. If you require any clarification or have concerns regarding your privacy or data security while
-            using our app, please do not hesitate to contact us. Your trust in PassMancer is of utmost importance to us.
-        </p>
-    </div>
-
-    <!-- Bootstrap scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>PassMancer</strong></p>
+            <p>© 2025 PassMancer. Made with ❤️ in India. Privacy-first password generation.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
